@@ -28,19 +28,18 @@ Quantifiers are defining the length of the characters. `+` here means the string
 
 ### Character Classes
 /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/ <br />
-`a-z`, `0-9` is searing for letters from a to z and numbers 0-9. `\d` also means the number of 0 to 9 but only a single digit.
+`a-z`, `0-9` is searching for letters from a to z and numbers 0-9. `\d` also means the number of 0 to 9 but only a single digit.
 
 ### Grouping and Capturing
 /^`([a-z0-9_\.-]+)`@`([\da-z\.-]+)`\.`([a-z\.]{2,6})`$/ <br />
-Grouping constructs is used to breake the string into different sections using `()` when the string is complex. The first group is `([a-z0-9_\.-]+)`, which is used to match the local part of the email address. The second section `([\da-z\.-]+)` is to detemine the domain.
-`([a-z\.]{2,6})` is to match the extension.
+Grouping is used to breake the string into different sections using `()` when the string is complex. The first group is `([a-z0-9_\.-]+)`, which is used to match the local part of the email address. The second section `([\da-z\.-]+)` is to detemine the domain. And the `([a-z\.]{2,6})` is to match the extension.
 
 ### Bracket Expressions
 /^(`[`a-z0-9_\.-`]`+)@(`[`\da-z\.-`]`+)\.(`[`a-z\.`]`{2,6})$/<br />
-The `[``]` would include any required characters that we want to match within the email address.
+The `[]` would include any required characters that we want to match within the email address.
 a-z: letters from a to z;
 0-9: numbers from 0 to 9;
-_,\.,-: the local parts of the email address could be able to contain these symbols. The backslash of the period is Escape character.
+_,\.,-: the local parts of the email address could be able to contain these symbols. The backslash of the period is the Escape Character of the period.
 
 ### Greedy and Lazy Match
 /^([a-z0-9_\.-]`+`)@([\da-z\.-]`+)`\.([a-z\.]`{`2,6`}`)$/ <br />
