@@ -17,6 +17,7 @@
 ## Usage
    ![Screenshot](./img/Regex%20Tutorial.png)
    - URL of GitHub Repo: https://github.com/Kayexie/regex-tutorial
+   - URL of the GitHub gist: https://gist.github.com/Kayexie/31c886f86fa88a885821e1053a7da57f
 ## License
    N/A
 ## Contributingß
